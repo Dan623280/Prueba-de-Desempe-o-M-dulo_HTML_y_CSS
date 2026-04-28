@@ -1,0 +1,41 @@
+/* HEADER */
+header{
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header img{
+    width: 70px;
+    height: 100%;
+}
+
+nav ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li, a{
+    cursor: pointer;
+    transition: .3s;
+}
+
+nav ul li:hover{
+    color: red;
+}
+
+.comprar{
+    background: red;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+}

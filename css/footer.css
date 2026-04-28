@@ -1,0 +1,50 @@
+/* FOOTER */
+footer{
+    background: black;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 30px;
+}
+
+footer img{
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+footer h3{
+    color: red;
+    margin-bottom: 15px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer li{
+    margin-bottom: 10px;
+}
+
+.footer-column-3 ul{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-column-3 img{
+    width: 35px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+footer button{
+    padding: 10px;
+    width: 100%;
+    background: red;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}

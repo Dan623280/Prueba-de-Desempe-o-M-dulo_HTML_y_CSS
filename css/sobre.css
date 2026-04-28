@@ -1,0 +1,82 @@
+/* SOBRE */
+.sobre{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 50vh;
+}
+
+.sobre img{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+}
+
+.descripcion-sobre{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 0px 25px;
+}
+.descripcion-sobre h2{
+    margin-top: 0;
+    text-align: start;
+    text-transform: uppercase;
+}
+
+.descripcion-sobre p {
+    color: white;
+}
+
+.sobre-lista{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 25px;  
+    align-items: center;
+}
+.sobre-lista h3{
+    color: white;
+    width: 100%;
+    margin-top: 0;
+    color: red;
+
+}
+
+.sobre-lista ul{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    list-style: none;
+    gap: 5px;
+
+}
+
+.sobre-lista ul li{
+    display: flex;
+    width: auto;
+    color: white;
+    gap: 5%;
+    color: grey;
+}
+
+.sobre-lista ul li img{
+    width: 20px;
+    height: 20px;
+}

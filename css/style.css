@@ -1,0 +1,120 @@
+
+@import url("albums.css");
+@import url("sobre.css");
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 4%;
+    text-transform: uppercase;
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+
+/* HERO */
+.section-1{
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.section-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+.info{
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translateY(-50%);
+}
+
+.info h1{
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.info span{
+    color: red;
+}
+
+.info p{
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+.info button{
+    padding: 12px 20px;
+    border: none;
+    background: red;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* TABLA */
+.fechas{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th{
+    background: red;
+    color: black;
+    padding: 15px;
+}
+
+td{
+    padding: 15px;
+    border-bottom: 1px solid white;
+}
+
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .info h1{
+        font-size: 2rem;
+    }
+
+    .section-1{
+        height: 70vh;
+    }
+}
