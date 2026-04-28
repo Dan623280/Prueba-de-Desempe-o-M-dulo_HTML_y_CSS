@@ -32,6 +32,7 @@ h3{
     position: relative;
     height: 90vh;
     overflow: hidden;
+    margin-bottom: 10%;
 }
 
 .section-1 img{
@@ -96,25 +97,20 @@ td{
     border-bottom: 1px solid white;
 }
 
+/*responsive*/
 
-/* RESPONSIVE */
-@media(max-width:768px){
-
-    header{
-        flex-direction: column;
-        gap: 15px;
+@media(max-width: 450px){
+    /* HEADER */
+    .section{
+        width: 100%;
     }
-
-    nav ul{
-        flex-wrap: wrap;
-        justify-content: center;
+    h2{
+        margin-left: 0;
+        margin-right: 0;
     }
-
-    .info h1{
-        font-size: 2rem;
-    }
-
     .section-1{
-        height: 70vh;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
     }
 }

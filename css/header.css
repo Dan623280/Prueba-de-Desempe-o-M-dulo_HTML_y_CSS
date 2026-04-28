@@ -10,6 +10,8 @@ header{
     top: 0;
     z-index: 1000;
 }
+/* 
+imagen del header */
 
 header img{
     width: 70px;
@@ -26,11 +28,14 @@ nav ul{
 nav ul li, a{
     cursor: pointer;
     transition: .3s;
+    text-decoration: none;
+    color: white;
 }
 
-nav ul li:hover{
+a:hover{
     color: red;
 }
+
 
 .comprar{
     background: red;
@@ -38,4 +43,60 @@ nav ul li:hover{
     padding: 10px 15px;
     border-radius: 6px;
     font-weight: bold;
+}
+
+#btnMenu{
+    display: none;
+    gap: 25px;
+    align-items: center;
+}
+
+/*RESPONSIVE*/
+
+@media(max-width: 560px){
+    header{
+        display: block;
+    }
+    #btnMenu{
+        display: flex;
+        position: absolute;
+        top: 10%;
+        right: 3%;
+        font-size: 50px;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav ul li{
+        display: block;
+    }
+}
+@media(min-width: 560px){
+    #menu{
+        display: flex;
+    }
+}
+
+#menu.activo{
+    display: none;
+    background-color: blue;
+}
+
+@media(max-width: 450px){
+    /* HEADER */
+header{
+    
+    padding: 15px 0px;
+    
+}
+    
+#btnMenu{
+        display: flex;
+        position: absolute;
+        top: 10%;
+        right: 0px;
+        font-size: 50px;
+    }
 }
